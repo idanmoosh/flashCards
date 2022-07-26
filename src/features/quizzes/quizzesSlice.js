@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { addQuizId } from "../topics/topicsSlice";
-import { useSelector } from "react-redux";
 
 
 
@@ -29,7 +28,6 @@ export const addQuizAddQuizId = quiz => {
         dispatch (addQuizId({quizId: quizId , topicId : topicId}));
     }
 }
-const something = useSelector(state=>state.cards.cards)
 
 
 export const quizzesSlice = createSlice(options);
